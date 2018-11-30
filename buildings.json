@@ -1,0 +1,320 @@
+{
+    "Swearingen":
+    {
+        "Name": "Swearingen Engineering Center",
+        "Code": "SWGN",
+        "WebName": "Swearingen+Engineering+Center,Columbia+South+Carolina"
+    },
+    "McMaster":
+    {
+        "Name": "McMaster College",
+        "Code": "MCMSTR",
+        "WebName": "McMaster+College,Columbia+South+Carolina"
+    },
+    "School of Law":
+    {
+        "Name": "School of Law",
+        "Code": "SCHLAW",
+        "WebName": "School+of+Law,Columbia+South+Carolina"
+    },
+    "Close-Hipp Buildings":
+    {
+        "Name": "Close-Hipp Buildings",
+        "Code": "CLHIPP",
+        "WebName": "Close+Hipp+Buildings,Columbia+South+Carolina"
+    },
+    "819 Barwnell":
+    {
+        "Name": "819 Barnwell Street",
+        "Code": "PSYCAX",
+        "WebName": "819+Barnwell+Street,Columbia+South+Carolina"
+    },
+    "Hamilton":
+    {
+        "Name": "Hamilton College",
+        "Code": "HAMLTN",
+        "WebName": "Hamilton+College,Columbia+South+Carolina"
+    },
+    "Barnwell":
+    {
+        "Name": "Barnwell College",
+        "Code": "BRNWEL",
+        "WebName": "Barnwell+College,Columbia+South+Carolina"
+    },
+    "Sloan":
+    {
+        "Name": "Sloan College",
+        "Code": "S",
+        "WebName": ",Columbia+South+Carolina"
+    },
+    "Humanities Classroom":
+    {
+        "Name": "Humanities Classroom Building",
+        "Code": "HUMCB",
+        "WebName": "Humanities+Classroom+Building,Columbia+South+Carolina"
+    },
+    "J Welsh":
+    {
+        "Name": "J Welsh Humanities Building",
+        "Code": "HUMOB",
+        "WebName": "J+Welsh+Humanities+Building,Columbia+South+Carolina"
+    },
+    "Gambrell":
+    {
+        "Name": "Gambrell Hall",
+        "Code": "GAMBRL",
+        "WebName": "Gambrell+Hall,Columbia+South+Carolina"
+    },
+    "Williams-Brice":
+    {
+        "Name": "Williams-Brice Building",
+        "Code": "WMBB",
+        "WebName": "Williams+Brice+Building,Columbia+South+Carolina"
+    },
+    "Williams-Brice Auditorium":
+    {
+        "Name": "Williams-Brice Building Auditorium",
+        "Code": "N/A",
+        "WebName": "Williams+Brice+Building+Auditorium,Columbia+South+Carolina"
+    },
+    "LeConte":
+    {
+        "Name": "LeConte College",
+        "Code": "LCONTE",
+        "WebName": "LeConte+College,Columbia+South+Carolina"
+    },
+    "Petigru":
+    {
+        "Name": "Petigru College",
+        "Code": "PETIGR",
+        "WebName": "Petigru+College,Columbia+South+Carolina"
+    },
+    "Davis":
+    {
+        "Name": "Davis College",
+        "Code": "D",
+        "WebName": "Davis+College,Columbia+South+Carolina"
+    },
+    "McKissick":
+    {
+        "Name": "McKissick",
+        "Code": "MCKSK",
+        "WebName": "McKissick,Columbia+South+Carolina"
+    },
+    "Archeology and Anthropology":
+    {
+        "Name": "S.C. Institute of Archaeology and Anthropology",
+        "Code": "INSTAA",
+        "WebName": "1321+Pendleton+Street,Columbia+South+Carolina"
+    },
+    "Flinn":
+    {
+        "Name": "Flinn Hall",
+        "Code": "FL",
+        "WebName": "Flinn+Hall,Columbia+South+Carolina"
+    },
+    "McCutchen":
+    {
+        "Name": "McCutchen House",
+        "Code": "MCCTCH",
+        "WebName": "McCutchen+House,Columbia+South+Carolina"
+    },
+    "SC Library":
+    {
+        "Name": "South Carolina Library",
+        "Code": "SCARLB",
+        "WebName": "South+Carolina+Library,Columbia+South+Carolina"
+    },
+    "Melton":
+    {
+        "Name": "Melton Observatory",
+        "Code": "MEL",
+        "WebName": "Melton+Observatory,Columbia+South+Carolina"
+    },
+    "Currell":
+    {
+        "Name": "Currell College",
+        "Code": "CRRELL",
+        "WebName": "Currell+College,Columbia+South+Carolina"
+    },
+    "Currell Annex":
+    {
+        "Name": "Currell Annex",
+        "Code": "CA",
+        "WebName": "Currell+Annex,Columbia+South+Carolina"
+    },
+    "JFB Building":
+    {
+        "Name": "James F Byrnes Building",
+        "Code": "BYRNES",
+        "WebName": "James+F+Byrnes+Building,Columbia+South+Carolina"
+    },
+    "Drayton":
+    {
+        "Name": "Drayton Hall",
+        "Code": "DRAYTN",
+        "WebName": "Drayton+Hall,Columbia+South+Carolina"
+    },
+    "Journalism and Mass Comm":
+    {
+        "Name": "School of Journalism and Mass Communications",
+        "Code": "SJMC",
+        "WebName": "School+Of+Journalism+and+Mass+Communications,Columbia+South+Carolina"
+    },
+    "Wardlaw":
+    {
+        "Name": "Wardlaw College",
+        "Code": "WRDLAW",
+        "WebName": "Wardlaw+College,Columbia+South+Carolina"
+    },
+    "Longstreet":
+    {
+        "Name": "Longstreet Theatre",
+        "Code": "LONGST",
+        "WebName": "Longstreet+Theatre,Columbia+South+Carolina"
+    },
+    "Callcott":
+    {
+        "Name": "Callcott Social Sciences Center",
+        "Code": "CLLCTT",
+        "WebName": "Callcott+Social+Sciences+Center,Columbia+South+Carolina"
+    },
+    "Sumwalt":
+    {
+        "Name": "Sumwalt College",
+        "Code": "SMWALT",
+        "WebName": "Sumwalt+College,Columbia+South+Carolina"
+    },
+    "Jones":
+    {
+        "Name": "Jones Physical Sciences Center",
+        "Code": "PSC",
+        "WebName": "Jones+Physical+Sciences+Center,Columbia+South+Carolina"
+    },
+    "Earth and Water":
+    {
+        "Name": "Earth and Water Sciences Building",
+        "Code": "EWSCI",
+        "WebName": "Earth+and+Water+Sciences+Building,Columbia+South+Carolina"
+    },
+    "Coker":
+    {
+        "Name": "Coker Life Sciences Building",
+        "Code": "CLS",
+        "WebName": "Coker+Life+Sciences+Building,Columbia+South+Carolina"
+    },
+    "Thomas Cooper":
+    {
+        "Name": "Thomas Cooper Library",
+        "Code": "TCLIBR",
+        "WebName": "Thomas+Cooper+Library,Columbia+South+Carolina"
+    },
+    "Hollings":
+    {
+        "Name": "Hollings Special Collections Library",
+        "Code": "HSCLIB",
+        "WebName": "Hollings+Special+Collections+Library,Columbia+South+Carolina"
+    },
+    "John Palms":
+    {
+        "Name": "John M Palms Center for Graduate Sciences Research",
+        "Code": "GSRC",
+        "WebName": "John+M+Palms+Center+for+graduate+research,Columbia+South+Carolina"
+    },
+    "Keenan":
+    {
+        "Name": "Keenan Building",
+        "Code": "KB",
+        "WebName": "Keenan+Building,Columbia+South+Carolina"
+    },
+    "Public Health":
+    {
+        "Name": "Public Health Research Center",
+        "Code": "PHRC",
+        "WebName": "Public+Health+Research+Center,Columbia+South+Carolina"
+    },
+    "Music":
+    {
+        "Name": "School of Music",
+        "Code": "MUSB",
+        "WebName": "School+Of+Music,Columbia+South+Carolina"
+    },
+    "Discovery":
+    {
+        "Name": "Discovery 1 Building",
+        "Code": "DISC1",
+        "WebName": "Discovery+1+Building,Columbia+South+Carolina"
+    },
+    "Darla Moore":
+    {
+        "Name": "Darla Moore School of Business",
+        "Code": "DMSB",
+        "WebName": "Darla+Moore+School+of+Business,Columbia+South+Carolina"
+    },
+    "Coliseum":
+    {
+        "Name": "Carolina Coliseum",
+        "Code": "COL",
+        "WebName": "Carolina+Coliseum,Columbia+South+Carolina"
+    },
+    "Devine St Research":
+    {
+        "Name": "Devine Street Research Center",
+        "Code": "730D",
+        "WebName": "Devine+Street+Research+Center,Columbia+South+Carolina"
+    },
+    "Mechanical Engineering":
+    {
+        "Name": "Mechanical Engineering Building",
+        "Code": "300MN",
+        "WebName": "300+Main+Street,Columbia+South+Carolina"
+    },
+    "Horizon 1 Building":
+    {
+        "Name": "Horizon 1 Building",
+        "Code": "HORIZN",
+        "WebName": "Horizon+1+Building,Columbia+South+Carolina"
+    },
+    "Innovation":
+    {
+        "Name": "Innovation Center Building",
+        "Code": "INNOV",
+        "WebName": "Innovation+Center+Building,Columbia+South+Carolina"
+    },
+    "Booker T":
+    {
+        "Name": "Booker T Washington",
+        "Code": "BTWASH",
+        "WebName": "Booker+T+Washington,Columbia+South+Carolina"
+    },
+    "Child Development":
+    {
+        "Name": "Child Development and Research Center",
+        "Code": "CDRCTR",
+        "WebName": "Child+Development+and+Research+Center,Columbia+South+Carolina"
+    },
+    "Challenge":
+    {
+        "Name": "Challenge Course Building",
+        "Code": "CHALNG",
+        "WebName": "Challenge+Course+Building,Columbia+South+Carolina"
+    },
+    "Benson":
+    {
+        "Name": "Benson",
+        "Code": "BENS",
+        "WebName": ",Columbia+South+Carolina"
+    },
+    "Band and Dance":
+    {
+        "Name": "Band and Dance Facility",
+        "Code": "BANDDF",
+        "WebName": "Band+and+Dance+Facility,Columbia+South+Carolina"
+    },
+    "Blatt":
+    {
+        "Name": "Solomon Blatt Physical Education Center",
+        "Code": "BPEC",
+        "WebName": "Blatt+Physical+Education+Center,Columbia+South+Carolina"
+    }
+}
