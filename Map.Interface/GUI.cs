@@ -17,6 +17,10 @@ namespace USC_Map
 {
     public partial class GUI : Form
     {
+        // remember to remove before github push
+        private string apiKey = "REDACTED";
+        private string mapType = "roadmap";
+        private string unusedType = "hybrid";
         public GUI()
         {
             InitializeComponent();
@@ -27,7 +31,7 @@ namespace USC_Map
         private void GUI_Load(object sender, EventArgs e)
         {
             webBrowser1.AllowNavigation = true;
-            Uri coordURL = new Uri($"https://maps.googleapis.com/maps/api/staticmap?center=The+Horseshoe,Columbia+SC&zoom=17&size={webBrowser1.Size.Width}x{webBrowser1.Size.Height-50}&maptype=roadmap&key=REDACTED");
+            Uri coordURL = new Uri(returnURL("The+Horseshoe,Columbia+SC"));
             webBrowser1.Navigate(coordURL);
         }
 
@@ -38,9 +42,7 @@ namespace USC_Map
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
 
             foreach (var kvp in Database.buildingDB)
-            {
                 coll.Add(kvp.Value.Name + "-" + kvp.Value.Code);
-            }
 
             NameSearch.AutoCompleteCustomSource = coll;
         }
@@ -56,36 +58,22 @@ namespace USC_Map
                 listBox1.Items.Add(entry);
         }
 
-        private void SearchBox_TextChanged(object sender, EventArgs e)
-        {
-
-            TextBox textBox = sender as TextBox;
-            if (textBox != null)
-            {
-                var searchResults = Database.FindBuildings(textBox.Text);
-            }
-        }
-
         private void input_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Enter)
             {
-                var building = Database.FindBuildings(NameSearch.Text);
+                var building = Database.FindBuildings(listBox1.Text);
                 if (building.Count == 1)
-                {
                     UpdateMap(building[0]);
-                }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var building = Database.FindBuildings(NameSearch.Text);
+            UpdateListboxSelection();
+            var building = Database.FindBuildings(listBox1.Text);
             if (building.Count == 1)
-            {
-
                 UpdateMap(building[0]);
-            }
         }
 
         private void UpdateMap(Building building)
@@ -95,7 +83,7 @@ namespace USC_Map
 
         private string returnURL(string webname)
         {
-            return $"https://maps.googleapis.com/maps/api/staticmap?center={webname}&zoom=17&size={webBrowser1.Size.Width}x{webBrowser1.Size.Height-50}&maptype=roadmap&key=REDACTED";
+            return $"https://maps.googleapis.com/maps/api/staticmap?center={webname}&zoom=17&size={webBrowser1.Size.Width}x{webBrowser1.Size.Height-50}&maptype={mapType}&style=feature:poi|visibility:off&markers=color:red|{webname}&key={apiKey}";
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,8 +93,45 @@ namespace USC_Map
 
             var building = Database.FindBuildings((string)buildingName);
             if (building.Count == 1)
-            {
                 UpdateMap(building[0]);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            updateView();
+            var building = Database.FindBuildings(listBox1.Text);
+            if (building.Count == 1)
+                UpdateMap(building[0]);
+        }
+
+        private void updateView()
+        {
+            string temp = mapType;
+            mapType = unusedType;
+            unusedType = temp;
+        }
+
+        private void NameSearch_TextChanged(object sender, EventArgs e)
+        {
+            UpdateListboxSelection();
+        }
+
+        private void UpdateListboxSelection()
+        {
+            var building = Database.FindBuildingMatch(NameSearch.Text);
+            if (building != null)
+            {
+                int index = -1;
+                for (int i = 0; i < listBox1.Items.Count; i++)
+                {
+                    string name = listBox1.Items[i] as string;
+                    if (building.Name.ToLower().Equals(name.ToLower()))
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                listBox1.SelectedItem = listBox1.Items[index];
             }
         }
     }

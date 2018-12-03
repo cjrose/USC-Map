@@ -28,7 +28,7 @@ namespace USC_Map
             string name = Name.ToLower();
             List<Building> result = new List<Building>();
 
-            if (!Name.Contains("-"))
+            if (!name.Contains("-"))
             {
                 // Loop through all of the Buildings in the database
                 foreach (KeyValuePair<string, Building> kvp in buildingDB)
@@ -69,6 +69,33 @@ namespace USC_Map
             
 
             return result;
+        }
+
+        public static Building FindBuildingMatch(string Name)
+        {
+            string name = Name.ToLower();
+
+            if (!name.Contains("-"))
+            {
+                // I think they should always include it now?
+            }
+            else
+            {
+                string[] s = name.Split('-');
+
+                foreach(var kvp in buildingDB)
+                {
+                    if (kvp.Value.Name.ToLower().Equals(s[0]))
+                    {
+                        return kvp.Value;
+                    }
+                    if (kvp.Value.Code.ToLower().Equals(s[1]))
+                    {
+                        return kvp.Value;
+                    }
+                }
+            }
+            return null;
         }
     }
 }
