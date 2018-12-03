@@ -1,4 +1,4 @@
-/* Copyright 2018 */
+﻿/* Copyright 2018 */
 /* Cody Rose */
 
 using System;
@@ -10,9 +10,9 @@ namespace USC_Map
 {
     public class Database
     {
-        public Dictionary<string, Building> buildingDB = new Dictionary<string, Building>();
+        public static Dictionary<string, Building> buildingDB = new Dictionary<string, Building>();
 
-        public void PopulateDictionary()
+        public static void PopulateDictionary()
         {
             string file = File.ReadAllText(@"./buildings.json");
             var values = JsonConvert.DeserializeObject<Dictionary<string, Building>>(file);
@@ -22,28 +22,51 @@ namespace USC_Map
             }
         }
 
-        public List<Building> FindBuildings (string Name)
+        public static List<Building> FindBuildings (string Name)
         {
             // Convert to lowercase for comparison purposes
             string name = Name.ToLower();
             List<Building> result = new List<Building>();
-            // Loop through all of the Buildings in the database
-            foreach (KeyValuePair<string, Building> kvp in buildingDB)
-            {
-                // Compare the name of the building with the input
-                if (kvp.Value.Name.ToLower().Contains(name))
-                {
-                    result.Add(buildingDB[kvp.Key]);
-                    break;
-                }
 
-                // Compare the code for the building with the input
-                if (kvp.Value.Code.ToLower().Contains(name))
+            if (!Name.Contains("-"))
+            {
+                // Loop through all of the Buildings in the database
+                foreach (KeyValuePair<string, Building> kvp in buildingDB)
                 {
-                    result.Add(buildingDB[kvp.Key]);
-                    break;
+                    // Compare the name of the building with the input
+                    if (kvp.Value.Name.ToLower().Contains(name))
+                    {
+                        result.Add(buildingDB[kvp.Key]);
+                        continue;
+                    }
+
+                    // Compare the code for the building with the input
+                    if (kvp.Value.Code.ToLower().Contains(name))
+                    {
+                        result.Add(buildingDB[kvp.Key]);
+                        continue;
+                    }
+                }
+            } else
+            {
+                string[] s = name.Split('-');
+
+                foreach(KeyValuePair<string, Building> kvp in buildingDB)
+                {
+                    if (kvp.Value.Name.ToLower().Contains(s[0]))
+                    {
+                        result.Add(buildingDB[kvp.Key]);
+                        continue;
+                    }
+
+                    if (kvp.Value.Code.ToLower().Contains(s[1]))
+                    {
+                        result.Add(buildingDB[kvp.Key]);
+                        continue;
+                    }
                 }
             }
+            
 
             return result;
         }

@@ -1,0 +1,15 @@
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.csprojAssemblyReference.cache
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.Properties.Resources.resources
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.csproj.GenerateResource.cache
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.csproj.CoreCompileInputs.cache
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\USCMap.exe.config
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\USCMap.exe
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\USCMap.pdb
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USC_Map.GUI.resources
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.csproj.CopyComplete
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.exe
+C:\Users\Cody\source\repos\USCMap\USCMap\obj\Debug\USCMap.pdb
+C:\Users\Cody\source\repos\USCMap\USCMap\bin\Debug\buildings.json

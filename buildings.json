@@ -1,10 +1,9 @@
-{
-    "Swearingen":
-    {
-        "Name": "Swearingen Engineering Center",
-        "Code": "SWGN",
-        "WebName": "Swearingen+Engineering+Center,Columbia+South+Carolina"
-    },
+﻿{
+  "Swearingen": {
+    "Name": "Swearingen Engineering Center",
+    "Code": "SWGN",
+    "WebName": "Swearingen+Engineering+Center,Columbia+South+Carolina"
+  },
     "McMaster":
     {
         "Name": "McMaster College",
@@ -17,9 +16,9 @@
         "Code": "SCHLAW",
         "WebName": "School+of+Law,Columbia+South+Carolina"
     },
-    "Close-Hipp Buildings":
+    "Close Hipp Buildings":
     {
-        "Name": "Close-Hipp Buildings",
+        "Name": "Close Hipp Buildings",
         "Code": "CLHIPP",
         "WebName": "Close+Hipp+Buildings,Columbia+South+Carolina"
     },
@@ -65,15 +64,15 @@
         "Code": "GAMBRL",
         "WebName": "Gambrell+Hall,Columbia+South+Carolina"
     },
-    "Williams-Brice":
+    "Williams Brice":
     {
-        "Name": "Williams-Brice Building",
+        "Name": "Williams Brice Building",
         "Code": "WMBB",
         "WebName": "Williams+Brice+Building,Columbia+South+Carolina"
     },
-    "Williams-Brice Auditorium":
+    "Williams Brice Auditorium":
     {
-        "Name": "Williams-Brice Building Auditorium",
+        "Name": "Williams Brice Building Auditorium",
         "Code": "N/A",
         "WebName": "Williams+Brice+Building+Auditorium,Columbia+South+Carolina"
     },

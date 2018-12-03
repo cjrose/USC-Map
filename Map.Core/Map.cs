@@ -1,17 +1,24 @@
-/* Copyright 2018 */
+﻿/* Copyright 2018 */
 /* Cody Rose */
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace USC_Map
 {
-    public class USCMap
+    static class Map
     {
-        internal static Database buildings = new Database();
-        public static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("-=-= Starting USC Map Program =-=-\n\tBy: Cody Rose");
-            buildings.PopulateDictionary();
+            Database.PopulateDictionary();
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new GUI());
         }
     }
 }
